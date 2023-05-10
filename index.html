@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Temp Converter</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="container">
+		<h2>Temperature converter</h2>
+		<form>
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-6">
+			<label>Degrees</label><br>
+			<input class="input-text" type="text" name="degree" id="deg" autocomplete="off" required></div>
+			<div class="col-lg-6 col-md-6 col-sm-6">
+			<label>Type</label><br>
+			<select class="input-text hi" name="type" id="unit" autocomplete="off" required>
+  	<option value="Fahrenheit">Fahrenheit</option>
+  	<option value="Celsius">Celsius</option>
+  	<!-- <option value="kelvin">Kelvin</option> -->
+			</select></div>
+		</div><br>
+			<label>Result</label><br>
+			<input class="input-text" type="text" name="result" id="res" value="" autocomplete="off"><br>
+			<input class="btn" type="submit" name="Convert" value="Convert" onclick="convert()">
+		</form>
+	</div>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
